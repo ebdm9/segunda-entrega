@@ -1,0 +1,241 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos generales*/
+body{
+    background: linear-gradient(99deg, rgba(251,251,251,1) 5%, rgba(199,201,201,0.7063200280112045) 100%);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+       /*estilos header*/
+
+.header-fondo{
+    background-color: #495d66;  
+}
+
+     /*estilos de footer*/
+footer{
+    background-color: whitesmoke;
+    color: #363530;  
+    text-align: center;
+    height: 5em;
+}
+
+footer img{
+    height: 3rem;
+    width: 3rem;
+}
+
+footer h2{
+    font-size: 0.7em;
+}
+
+
+/*estilos index*/
+
+/*estilos de main*/
+main{    
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+    padding: 0.5rem;
+}
+
+.carousel{
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+
+main h1{
+    width: 100%;
+    background-color: #767c7e;
+    padding: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    
+}
+
+/*estilos de productos*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+    padding: 1.5rem;
+    margin-top: 7em;
+}
+
+.container img{
+    margin: 2em;
+}
+
+/*estilos de preguntas frecuentes*/
+.cuestionario{
+    margin-top: 7em;
+    color: #495d66;
+}
+
+.faq{
+    text-align: start;
+}
+
+.pregunta{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+
+/*estilos de sobre nosotros*/
+
+.historia{
+    margin-top: 7rem;
+
+}
+
+.historia-p{
+    color: #495d66;
+    margin: 3rem;
+    width: 30rem;
+}
+
+.nosotros{
+    color: #495d66;
+    display: block;
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 5rem;
+    animation-name: animacion-nosotros;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    background-color: #c2c8ca;
+}
+
+.nosotros-mision{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros-vision{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros-valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros-valores-items{
+        list-style-type: none;
+}
+
+@keyframes animacion-nosotros{
+    0%{
+        transform: scale(0.5);
+    }        
+
+    50%{
+        transform: scale(0.8);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*pantalla de escritorio*/
+@media screen and (min-width:1024px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 7;
+        grid-template-areas: 
+            "header header"
+            "h1 h1"
+            "alternadores compresores"
+            "opticas tableros"
+            "motores rejillas"
+            "cristales espejos"
+            "footer footer";
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .header-fondo{
+        grid-area: header;
+    }
+
+    .container h1{
+        grid-area: h1;
+    }
+
+
+    .alternadores{
+        grid-area: alternadores;
+    }
+
+    .compresores{
+        grid-area: compresores;
+    }
+
+    .opticas{
+        grid-area: opticas;
+    }
+
+    .tableros{
+        grid-area: tableros;
+    }
+
+    .motores{
+        grid-area: motores;
+    }
+
+    .rejillas{
+        grid-area: rejillas;
+    }
+
+    .cristales{
+        grid-area: cristales;
+    }
+
+    .espejos{
+        grid-area: espejos;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
+}
+
+/*estilos de contacto*/
+form{
+    display: flex;
+    background-color:#495d66;
+    padding: 2em;
+}
+
+
+
+
+
+
+
